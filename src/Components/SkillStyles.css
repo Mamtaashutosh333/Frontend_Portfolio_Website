@@ -1,0 +1,184 @@
+.section{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container1{
+    color: white;
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120;
+}
+
+
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.bar{
+    font-size: 23px;
+}
+
+.Technical-bar .bar{
+    margin-top: 40px 0;
+}
+
+.Technical-bar .bar:first-child{
+    margin-top: 0;
+}
+
+.Technical-bar .bar:last-child{
+    margin-bottom: 0;
+}
+
+.Technical-bar .bar .info{
+    margin-top: 5px;
+}
+
+
+.Technical-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+
+.Technical-bar .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #ffff;
+    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleY(0);
+    transform-origin: left;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.Technical-bar .bar .progress-line span{
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation:  animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+
+.read-hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25 cyan, 0 0 50px cyan,
+    0 0 10px cyan, 0 0 200px cyan;
+}
+
+
+.services-list div:hover{
+    transform: translateY(-10px);
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+
+
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.bar{
+    font-size: 23px;
+}
+
+.Technical-bar .bar{
+    margin-top: 40px 0;
+}
+
+.Technical-bar .bar:first-child{
+    margin-top: 0;
+}
+
+.Technical-bar .bar:last-child{
+    margin-bottom: 0;
+}
+
+.Technical-bar .bar .info{
+    margin-bottom: 5px;
+}
+
+.Technical-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+.Technical-bar .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform-origin: left;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+
+.Technical-bar .bar .progress-line span{
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span{
+    width: 90%;
+}
+
+.progress-line.css span{
+    width: 90%;
+}
+
+.progress-line.js span{
+    width: 90%;
+}
+
+.progress-line.react span{
+    width: 90%;
+}
+
+.progress-line.bootstrap span{
+    width: 90%;
+}
